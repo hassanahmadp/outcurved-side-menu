@@ -74,8 +74,19 @@ body {
   width: 15rem;
 }
 
+.sideNav.expand .title {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .sideNav .title {
-  margin-left: 2rem;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 li {

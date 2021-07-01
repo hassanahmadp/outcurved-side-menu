@@ -53,10 +53,17 @@ body {
   transition: width 0.5s ease;
   &.expand {
     width: 15rem;
+    .title {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 
   .title {
-    margin-left: 2rem;
+    margin: auto;
+    opacity: 0;
+    transition: 0.4s ease;
+    transform: scale(0.7);
   }
 }
 
