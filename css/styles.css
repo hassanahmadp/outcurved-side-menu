@@ -59,7 +59,11 @@ body {
   width: 15rem;
 }
 
-.sideNav li {
+.sideNav .title {
+  margin-left: 2rem;
+}
+
+li {
   margin: 1rem 0;
   position: relative;
   width: 100%;
@@ -70,31 +74,31 @@ body {
   border-bottom-left-radius: 1rem;
 }
 
-.sideNav li.active {
+li.active {
   background: white;
 }
 
-.sideNav li.active a {
+li.active a {
   color: black;
 }
 
-.sideNav li.active:hover {
+li.active:hover {
   background-color: #fff;
 }
 
-.sideNav li.active:hover a {
+li.active:hover a {
   color: black;
 }
 
-.sideNav li:hover {
+li:hover {
   background: #6666c7;
 }
 
-.sideNav li ion-icon {
+li ion-icon {
   font-size: 1.5rem;
 }
 
-.sideNav a {
+a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,10 +111,6 @@ body {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.sideNav .title {
-  margin-left: 2rem;
 }
 
 li b {

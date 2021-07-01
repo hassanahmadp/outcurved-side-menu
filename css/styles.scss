@@ -27,10 +27,6 @@ body {
   right: 1rem;
 }
 
-// b {
-//   transition: 0.3s ease;
-// }
-
 .sideNav {
   overflow-x: hidden;
   padding-left: 1rem;
@@ -50,48 +46,50 @@ body {
   &.expand {
     width: 15rem;
   }
-  li {
-    // transition: 0.3s;
-    margin: 1rem 0;
-    position: relative;
-    width: 100%;
-    list-style: none;
-    padding: 1rem;
-    white-space: nowrap;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    &.active {
-      background: rgb(255, 255, 255);
-      a {
-        color: black;
-      }
-      &:hover {
-        background-color: #fff;
-        a {
-          color: black;
-        }
-      }
-    }
-    &:hover {
-      background: rgb(102, 102, 199);
-    }
-
-    ion-icon {
-      font-size: 1.5rem;
-    }
-  }
-  a {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
 
   .title {
     margin-left: 2rem;
   }
+}
+
+li {
+  // transition: 0.3s;
+  margin: 1rem 0;
+  position: relative;
+  width: 100%;
+  list-style: none;
+  padding: 1rem;
+  white-space: nowrap;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  &.active {
+    background: rgb(255, 255, 255);
+    a {
+      color: black;
+    }
+    &:hover {
+      background-color: #fff;
+      a {
+        color: black;
+      }
+    }
+  }
+  &:hover {
+    background: rgb(102, 102, 199);
+  }
+
+  ion-icon {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 li b {
