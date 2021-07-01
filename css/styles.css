@@ -113,43 +113,40 @@ body {
   margin-left: 2rem;
 }
 
-li b:nth-child(1) {
+li b {
   height: 1rem;
   position: absolute;
-  bottom: 100%;
-  right: 0;
   width: 100%;
   background: #3939a5;
 }
 
-li b:nth-child(1)::before {
+li b::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background: #3939a5;
-  border-bottom-right-radius: 1rem;
-}
-
-li b:nth-child(2) {
-  height: 1rem;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  background: #3939a5;
-}
-
-li b:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #3939a5;
-  border-top-right-radius: 1rem;
 }
 
 li b.active {
   background: white;
+}
+
+li b:nth-child(1) {
+  bottom: 100%;
+  right: 0;
+}
+
+li b:nth-child(1)::before {
+  border-bottom-right-radius: 1rem;
+}
+
+li b:nth-child(2) {
+  top: 100%;
+  right: 0;
+}
+
+li b:nth-child(2)::before {
+  border-top-right-radius: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

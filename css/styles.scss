@@ -94,50 +94,35 @@ body {
   }
 }
 
-li b:nth-child(1) {
+li b {
   height: 1rem;
   position: absolute;
-  bottom: 100%;
-  right: 0;
   width: 100%;
   background: rgb(57, 57, 165);
-  //   background: white;
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgb(57, 57, 165);
+  }
+  &.active {
+    background: white;
+  }
+}
+
+li b:nth-child(1) {
+  bottom: 100%;
+  right: 0;
+  &::before {
     border-bottom-right-radius: 1rem;
   }
 }
 
 li b:nth-child(2) {
-  height: 1rem;
-  position: absolute;
   top: 100%;
   right: 0;
-  width: 100%;
-  background: rgb(57, 57, 165);
-  //   background: white;
   &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(57, 57, 165);
-    // background: white;
     border-top-right-radius: 1rem;
   }
 }
-
-li b.active {
-  background: white;
-}
-
-// li:nth-child(1) {
-//   margin-bottom: auto;
-// }
-// li:nth-last-child(1) {
-//   margin-top: auto;
-// }
